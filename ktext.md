@@ -175,7 +175,7 @@ Here we're going to assume you know what ethernet card your system has, reminder
   * For Realtek's Gigabit Ethernet
   * Requires OS X 10.8 and up for versions v2.2.0 and below, macOS 10.12 and up for version v2.2.2, macOS 10.14 and up for versions v2.3.0 and up
   * **NOTE:** Sometimes the latest version of the kext might not work properly with your Ethernet. If you see this issue, try older versions.
-* [LucyRTL8125Ethernet](https://www.insanelymac.com/forum/files/file/1004-lucyrtl8125ethernet/)
+* [RTL812xLucy](https://github.com/Mieze/RTL812xLucy/releases)
   * For Realtek's 2.5Gb Ethernet
   * Requires macOS 10.15 or newer
 * For Intel's I225-V NICs, patches are mentioned in the desktop [Comet Lake DeviceProperties](config.plist/comet-lake.md#deviceproperties) section.
