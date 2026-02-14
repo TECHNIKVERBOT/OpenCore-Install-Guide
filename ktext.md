@@ -154,10 +154,11 @@ For those who plan to boot 10.7 and older may want to opt for these kexts instea
 
 Here we're going to assume you know what ethernet card your system has, reminder that product spec pages will most likely list the type of network card.
 
-* [IntelMausi](https://github.com/Mieze/IntelMausiEthernet/releases)
+* [IntelMausi](https://github.com/acidanthera/IntelMausi/releases)
   * Required for the majority of Intel NICs, chipsets that are based off of I211 will need the SmallTreeIntel82576 kext
   * Intel's 82578, 82579, I217, I218 and I219 NICs are officially supported
-  * Requires OS X 10.13 or newer, 10.6-10.12 users can use [acidanthera's](https://github.com/acidanthera/IntelMausi/releases) version instead for older OSes (use IntelSnowMausi for 10.6-10.8)
+  * Requires OS X 10.9 or newer, 10.6-10.8 users can use IntelSnowMausi instead for older OSes
+  * VT-d users and Rocket Lake+ boards running I219 NICs can use [Mieze's fork](https://github.com/Mieze/IntelMausiEthernet/releases)
 * [AppleIGB](https://github.com/donatengit/AppleIGB/releases)
   * Required for I211 NICs running on macOS Monterey and above
   * Might have instability issues on some NICs, recommended to stay on Big Sur and use SmallTree
@@ -175,7 +176,7 @@ Here we're going to assume you know what ethernet card your system has, reminder
   * For Realtek's Gigabit Ethernet
   * Requires OS X 10.8 and up for versions v2.2.0 and below, macOS 10.12 and up for version v2.2.2, macOS 10.14 and up for versions v2.3.0 and up
   * **NOTE:** Sometimes the latest version of the kext might not work properly with your Ethernet. If you see this issue, try older versions.
-* [RTL812xLucy](https://github.com/Mieze/RTL812xLucy/releases)
+* [LucyRTL8125Ethernet](https://github.com/Mieze/LucyRTL8125Ethernet/releases)
   * For Realtek's 2.5Gb Ethernet
   * Requires macOS 10.15 or newer
 * For Intel's I225-V NICs, patches are mentioned in the desktop [Comet Lake DeviceProperties](config.plist/comet-lake.md#deviceproperties) section.
