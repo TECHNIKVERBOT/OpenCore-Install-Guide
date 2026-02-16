@@ -176,10 +176,10 @@ Here we're going to assume you know what ethernet card your system has, reminder
   * For Realtek's Gigabit Ethernet
   * Requires OS X 10.8 and up for versions v2.2.0 and below, macOS 10.12 and up for version v2.2.2, macOS 10.14 and up for versions v2.3.0 and up
   * **NOTE:** Sometimes the latest version of the kext might not work properly with your Ethernet. If you see this issue, try older versions.
-* [RTL812xLucy](https://www.insanelymac.com/forum/topic/362326-rtl812xlucy-for-the-realtek-rtl812x-family/)
+* [RTL812xLucy](https://github.com/Mieze/RTL812xLucy/releases)
   * For Realtek's 2.5Gb Ethernet
   * Requires macOS 10.15 or newer
-  * **NOTE:** This kext is currently in beta, use [LucyRTL8125Ethernet](https://github.com/Mieze/LucyRTL8125Ethernet/releases) if experiencing issues
+  * **NOTE:** If the kext doesn't work properly, try using [LucyRTL8125Ethernet](https://github.com/Mieze/LucyRTL8125Ethernet/releases) instead.
 * For Intel's I225-V NICs, patches are mentioned in the desktop [Comet Lake DeviceProperties](config.plist/comet-lake.md#deviceproperties) section.
   * For macOS 13 and above, the kext supporting I225-V NICs was dropped and replaced with a DriverKit DEXT instead. This DEXT requires working VT-d, so we recommended reusing the older kext: [AppleIntelI210Ethernet](extra-files/AppleIntelI210Ethernet.kext.zip)
     * Monterey and older need not concern
